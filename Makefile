@@ -1,5 +1,5 @@
-DOCKER_IMAGE := mgcrea/node-opencv
-OPENCV_VERSION := 2.4.13
+DOCKER_IMAGE := aurlaw/node-edge-opencv
+OPENCV_VERSION := 2.4.12
 
 all: build
 
