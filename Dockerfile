@@ -1,5 +1,5 @@
-FROM node:4
-MAINTAINER Olivier Louvignes <olivier@mg-crea.com>
+FROM tjanczuk/edgejs:6.5.1
+MAINTAINER Michael Lawrence <mlawrence@aurlaw.com>
 
 ARG OPENCV_VERSION
 ENV OPENCV_VERSION ${OPENCV_VERSION:-2.4.13}

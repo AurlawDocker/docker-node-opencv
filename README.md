@@ -1,20 +1,20 @@
-# docker-node-opencv [![docker pulls](https://img.shields.io/docker/pulls/mgcrea/node-opencv.svg)](https://registry.hub.docker.com/u/mgcrea/node-opencv/) [![image size](https://img.shields.io/imagelayers/image-size/mgcrea/node-opencv/latest.svg)](https://imagelayers.io/?images=mgcrea%2Fnode-opencv:latest)
+# docker-node-edge-opencv 
 
-Docker image for NodeJS with [OpenCV](http://opencv.org/)
+Docker image for NodeJS with [OpenCV](http://opencv.org/) with support for [EdgeJS](https://github.com/tjanczuk/edge)
 
 ## Quickstart
 
 - In your shell:
 
 ```sh
-docker pull mgcrea/node-opencv:2.4.12
-docker run --name test_opencv -it mgcrea/node-opencv:2.4.12 /bin/bash
+docker pull aurlaw/node-edge-opencv:2.4.12
+docker run --name test_opencv -it aurlaw/node-edge-opencv:2.4.12 /bin/bash
 ```
 
 - In your `Dockerfile`:
 
 ```
-FROM mgcrea/node-opencv:2.4.12
+FROM aurlaw/node-edge-opencv:2.4.12
 ```
 
 
@@ -26,7 +26,7 @@ FROM mgcrea/node-opencv:2.4.12
 version: '2'
 services:
   backend:
-    image: mgcrea/node-opencv:2.4.12
+    image: aurlaw/node-edge-opencv:2.4.12
     container_name: test_opencv
     command: "node lib"
     # command: "/usr/local/bin/npm install --verbose"
@@ -51,12 +51,9 @@ docker-compose up -d
 
 ### Latest tagged releases
 
-You can find the latest available tags at [hub.docker.com](https://hub.docker.com/r/mgcrea/node-opencv/tags/)
+You can find the latest available tags at [hub.docker.com](https://hub.docker.com/r/aurlaw/node-opencv/tags/)
 
-- `mgcrea/node-opencv:2`
-- `mgcrea/node-opencv:2.4`
-- `mgcrea/node-opencv:2.4.12`
-- `mgcrea/node-opencv:2.4.12.3`
+- `aurlaw/node-edge-opencv:2.4.12`
 
 
 ## Links
