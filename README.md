@@ -1,4 +1,6 @@
 # docker-node-edge-opencv 
+[![docker pulls](https://img.shields.io/docker/pulls/aurlaw/node-edge-opencv.svg)](https://registry.hub.docker.com/u/aurlaw/node-edge-opencv/) [![image size](https://img.shields.io/imagelayers/image-size/aurlaw/node-edge-opencv/latest.svg)](https://imagelayers.io/?images=aurlaw%2Fnode-edge-opencv:latest)
+
 
 Docker image for NodeJS with [OpenCV](http://opencv.org/) with support for [EdgeJS](https://github.com/tjanczuk/edge)
 
@@ -32,7 +34,7 @@ services:
     # command: "/usr/local/bin/npm install --verbose"
     working_dir: /srv/node
     environment:
-      - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/opencv/build/lib
+      - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/opencv/build/libdocke
       - NODE_ENV=production
     expose:
       - "3000"
