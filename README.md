@@ -1,5 +1,5 @@
 # docker-node-edge-opencv 
-[![docker pulls](https://img.shields.io/docker/pulls/aurlaw/node-edge-opencv.svg)](https://registry.hub.docker.com/u/aurlaw/node-edge-opencv/) [![image size](https://img.shields.io/imagelayers/image-size/aurlaw/node-edge-opencv/latest.svg)](https://imagelayers.io/?images=aurlaw%2Fnode-edge-opencv:latest)
+[![docker pulls](https://img.shields.io/docker/pulls/aurlaw/docker-node-edge-opencv.svg)](https://registry.hub.docker.com/u/aurlaw/docker-node-edge-opencv/) [![image size](https://img.shields.io/imagelayers/image-size/aurlaw/docker-node-edge-opencv/2.4.12.svg)](https://imagelayers.io/?images=aurlaw%docker-node-edge-opencv:2.4.12)
 
 
 
@@ -10,14 +10,14 @@ Docker image for NodeJS with [OpenCV](http://opencv.org/) with support for [Edge
 - In your shell:
 
 ```sh
-docker pull aurlaw/node-edge-opencv:2.4.12
-docker run --name test_opencv -it aurlaw/node-edge-opencv:2.4.12 /bin/bash
+docker pull aurlaw/docker-node-edge-opencv:2.4.12
+docker run --name test_opencv -it aurlaw/docker-node-edge-opencv:2.4.12 /bin/bash
 ```
 
 - In your `Dockerfile`:
 
 ```
-FROM aurlaw/node-edge-opencv:2.4.12
+FROM aurlaw/docker-node-edge-opencv:2.4.12
 ```
 
 
@@ -29,7 +29,7 @@ FROM aurlaw/node-edge-opencv:2.4.12
 version: '2'
 services:
   backend:
-    image: aurlaw/node-edge-opencv:2.4.12
+    image: aurlaw/docker-node-edge-opencv:2.4.12
     container_name: test_opencv
     command: "node lib"
     # command: "/usr/local/bin/npm install --verbose"
@@ -54,9 +54,9 @@ docker-compose up -d
 
 ### Latest tagged releases
 
-You can find the latest available tags at [hub.docker.com](https://hub.docker.com/r/aurlaw/node-opencv/tags/)
+You can find the latest available tags at [hub.docker.com](https://hub.docker.com/r/aurlaw/docker-node-edge-opencv/tags/)
 
-- `aurlaw/node-edge-opencv:2.4.12`
+- `aurlaw/docker-node-edge-opencv:2.4.12`
 
 
 ## Links
