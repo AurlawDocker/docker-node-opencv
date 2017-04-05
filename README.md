@@ -20,7 +20,6 @@ docker run --name test_opencv -it aurlaw/docker-node-edge-opencv:latest /bin/bas
 FROM aurlaw/docker-node-edge-opencv:latest
 ```
 
-
 ### Usage with `docker-compose`
 
 ```yaml
