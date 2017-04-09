@@ -1,4 +1,4 @@
-DOCKER_IMAGE := aurlaw/node-edge-opencv
+DOCKER_IMAGE := aurlaw/docker-node-edge-opencv
 OPENCV_VERSION := 2.4.12
 
 all: build
@@ -7,7 +7,7 @@ build:
 	@docker build --build-arg OPENCV_VERSION=${OPENCV_VERSION} --tag=${DOCKER_IMAGE}:latest .
 
 base:
-	@docker pull node:4
+	@docker pull tjanczuk/edgejs:6.5.1
 
 rebuild: base
 	@docker build --build-arg OPENCV_VERSION=${OPENCV_VERSION} --tag=${DOCKER_IMAGE}:latest .
